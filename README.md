@@ -1,6 +1,9 @@
 # TechnisatPython
 Connect to your Technisat receiver, download and convert your recordings with a simple object oriented python api.
 
+## Tested devices:
++ Technisat Digicorder HD S2+: Fully functional
+
 ## Required Software:
 + Python 3+
 + ffmpeg-python from pip: ```pip install ffmpeg-python```
