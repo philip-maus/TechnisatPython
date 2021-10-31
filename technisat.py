@@ -183,6 +183,8 @@ class Technisat(object):
 
     def download(self, file: TechnisatFile, destination, output_format="mp4", resolution=""):
         self.idle.lock()
+        if file.recording_id < 0:
+            return False
         self.socket.send(bytes([5]) + struct.pack('>H', file.recording_id) + struct.pack('Q', 0))
         print("Starting download of \"" + file.title + "\": ", end='')
         self.__read_num()
