@@ -21,7 +21,7 @@ Manages the connection to the receiver and has methods for the available command
 + ```connect(ip, port)```: connects to the receiver at ip:port
 + ```ok()```: weather the receiver is ready to accept commands
 + ```info()```: returns the flags, language and name of the receiver
-+ ```ls(paht = "/")```: gets the files under path from the receiver and returns a TechnisatFile object
++ ```ls(directory = "/")```: gets the files under path from the receiver and returns a TechnisatFile object
 + ```download(file: TechnisatFile, destination, output_format="mp4", resolution="")```: downloads and converts the file in the TechnisatFile object to the folder in destination. You can also specify an output format and a resolution which is supported by ffmpeg
 + ```disconnect()```: disconnects from the receiver
 + ```resolve_id()```: returns the TechnisatFile object corresponding to the recording id
